@@ -1,57 +1,108 @@
+.results {
+    border: solid 1px black;
+    box-shadow: inset 1px 1px 2px 0 #585858, 1px 1px 2px 0 #707070;
+    float: right;
+    width: 100%;
+    min-height: 150px;
+    margin-bottom: 14px;
+    padding: 35px 0;
+}
+
+
 
 .quoteContainer {
     min-height: 250px;
+    min-width: 432px;
     padding-top: 30px;
-    background-color: lightblue;
 }
 
 
 .rounded {
-    border-radius: 2.25rem;
+    border-radius: 12px;
 }
 
-input {
-    font-size: 20px !important;
-}
+
 /* buttons */
 
 #submitDateButton, input {
+    font-family: 'Butterfly Kids', cursive;
+    font-weight: 200;
+    color: black;
+    font-size: 23px;
     background-color: #ffffff;
-    color: lightblue !important;
-    padding: 2px 6px;
+    margin-bottom: 0;
+    border: none;
+    box-shadow: none;
+    text-shadow: 4px 3px 5px #585858;
+}
+
+p span {
+    font-family: 'Nixie One', cursive;
+    font-size: 11px;
+    padding-right: 5px;
+    text-shadow: none;
+}
+
+
+#submitDateButton {
+    padding: 0 5px 10px 0 !important;
+}
+
+p {
+    margin: 0 10px !important;
+    font-size: 29px;
+    font-family: 'Butterfly Kids', cursive;
+    text-shadow: 1px 2px 4px #585858;
+}
+
+.description {
+    font-size: 18px;
+    text-shadow: none;
+}
+
+div input[type="text"] {
+    font-size: 50px !important;
+    text-indent: 7px;
+
+}
+
+input {
+    padding: 0 0 0 5px !important;
+}
+
+textarea:focus, input:focus{
+    outline: none;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    lightblue;
-    font-size: 20px;
-    padding: 5px;
+    color: black;
+    font-family: 'Butterfly Kids', cursive;
+    text-shadow: 4px 3px 5px #585858;
 
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    lightblue;
-    opacity:  1;
+    color: black;
+    padding: 5px;
+    font-family: 'Butterfly Kids', cursive;
+    text-shadow: 4px 3px 5px #585858;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    lightblue;
-    opacity:  1;
+    color: black;
+    padding: 5px;
+    font-family: 'Butterfly Kids', cursive;
+    text-shadow: 4px 3px 5px #585858;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color:    lightblue;
+    color: black;
+    padding: 5px;
+    font-family: 'Butterfly Kids', cursive;
+    text-shadow: 4px 3px 5px #585858;
 }
 
 input, #submitDateButton, .quoteContainer {
     border-radius: 11px;
-    border: solid 5px lightblue;
-    margin: 8px;
-
 }
 
-#submitDateButton:hover {
-    color: lightblue;
-    border: solid 2px lightblue;
-    background-color: #ffffff;
-
-}
 
 .btn:focus,.btn:active {
     outline: none !important;

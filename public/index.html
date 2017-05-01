@@ -5,7 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Butterfly+Kids" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 
     <title>Date Converter</title>
@@ -15,13 +18,15 @@
 
     <div class="col-xs-6 col-offset-xs-6 quoteContainer rounded">
         <form>
-            <div><input type="text" name="date" placeholder="Enter a date..."></div>
-            <div>
-                <input type="submit" name="sendDate" value="Convert Date" id="submitDateButton">
+            <div><input type="text" name="date" placeholder="Enter a date here . . ."></div>
+            <div class="text-right">
+                <input type="submit" name="sendDate" value=". . . just press enter (or tap here)" id="submitDateButton">
             </div>
 
         </form>
-        <div class="results"></div>
+        <div class="results rounded"></div>
+        <p class="description"><i class="fa fa-star-o" aria-hidden="true"></i> Enter dates in a wide variety of formats including unix and get back both a formatted, natural date and a unix formatted date.</p>
+        <p class="description"><i class="fa fa-star-o" aria-hidden="true"></i> A get request is made to a Heroku server which then returns the reformatted dates.</p>
     </div>
 </div>
 

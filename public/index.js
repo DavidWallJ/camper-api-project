@@ -16,8 +16,8 @@ $(document).ready(function () {
 
         $.get(url, function (data) {
             $( ".results" ).html(
-                "<p>Natural Date: " + data.natural + "</p><br>" +
-                "<p>Seconds since January 1, 1970 (UTC): " + data.unix + "</p>"
+                "<p class='text-center'><span>Natural Date: </span>" + data.natural + "</p>" +
+                "<p class='text-center'><span>Seconds since January 1, 1970 (UTC): </span>" + data.unix + "</p>"
             );
         });
 
