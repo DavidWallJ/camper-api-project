@@ -16,10 +16,9 @@ $(document).ready(function () {
 
         $.get(url, function (data) {
             $( ".results" ).html(
-                "<p>" + data.natural + "</p><br>" +
-                "<p>" + data.unix + "</p>"
+                "<p>Natural Date: " + data.natural + "</p><br>" +
+                "<p>Seconds since January 1, 1970 (UTC): " + data.unix + "</p>"
             );
-            // console.log(data.natural);
         });
 
     });
