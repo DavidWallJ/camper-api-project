@@ -1,0 +1,64 @@
+
+.quoteContainer {
+    min-height: 250px;
+    padding-top: 30px;
+    background-color: lightblue;
+}
+
+
+.rounded {
+    border-radius: 2.25rem;
+}
+
+input {
+    font-size: 20px !important;
+}
+/* buttons */
+
+#submitDateButton, input {
+    background-color: #ffffff;
+    color: lightblue !important;
+    padding: 2px 6px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    lightblue;
+    font-size: 20px;
+    padding: 5px;
+
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    lightblue;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    lightblue;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    lightblue;
+}
+
+input, #submitDateButton, .quoteContainer {
+    border-radius: 11px;
+    border: solid 5px lightblue;
+    margin: 8px;
+
+}
+
+#submitDateButton:hover {
+    color: lightblue;
+    border: solid 2px lightblue;
+    background-color: #ffffff;
+
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+}
+
+
+
+
+
