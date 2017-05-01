@@ -4,13 +4,19 @@
 var express = require('express');
 var bodyParser = require("body-parser");
 var cors = require("cors");
+var path = require("path");
+var PORT = process.env.PORT || 3000;
 
 var app = express();
 
-var PORT = process.env.PORT || 3000;
-
+app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(cors());
+
+
+
+
+
 var options = { year: 'numeric', month: 'long', day: 'numeric' };
 
 app.get('/dateValues/:date', function (req, res, next) {
@@ -19,11 +25,6 @@ app.get('/dateValues/:date', function (req, res, next) {
     // var splitDate = originalDate.split('=')[1];
     var localDate;
     var unixDate;
-
-
-
-    // this is where you are
-    // var longParamWithUnix ...
 
 
     if(isNaN(originalDate)){
@@ -49,8 +50,14 @@ app.get('/dateValues/:date', function (req, res, next) {
 
     res.send({"unix": unixDate, "natural": localDate});
 });
-// use toLocaleDateString
 
+
+
+
+
+app.get('/dateValues/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/index.html'));
+});
 
 app.listen(PORT, function () {
     console.log('Example app listening on port 3000!')
