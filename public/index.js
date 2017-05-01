@@ -10,7 +10,8 @@ $(document).ready(function () {
         event.preventDefault();
         date = dateObject[0].value;
 
-        var url = "http://localhost:3000/dateValues/" + date;
+
+        var url = "https://dateconverter.herokuapp.com/dateValues/" + date;
 
 
         $.get(url, function (data) {

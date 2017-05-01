@@ -27,6 +27,8 @@ app.get('/dateValues/:date', function (req, res, next) {
     var unixDate;
 
 
+
+
     if(isNaN(originalDate)){
         // var splitDate = originalDate.split('=')[1];
         var dateVal = new Date(originalDate);
@@ -53,11 +55,12 @@ app.get('/dateValues/:date', function (req, res, next) {
 
 
 
+if (PORT === 3000) {
 
-
-app.get('/dateValues/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/public/index.html'));
-});
+    app.get('/dateValues/', function (req, res) {
+        res.sendFile(path.join(__dirname + '/public/index.html'));
+    });
+}
 
 app.listen(PORT, function () {
     console.log('Example app listening on port 3000!')
