@@ -1,3 +1,7 @@
+body {
+    padding-top: 10%;
+}
+
 .results {
     border: solid 1px black;
     box-shadow: inset 1px 1px 2px 0 #585858, 1px 1px 2px 0 #707070;
@@ -45,13 +49,13 @@ p span {
 
 
 #submitDateButton {
-    padding: 0 5px 10px 0 !important;
+    padding: 0 5px 16px 0 !important;
 }
 
 p {
     margin: 0 10px !important;
     font-size: 29px;
-    font-family: 'Butterfly Kids', cursive;
+    font-family: 'Nixie One', cursive;
     text-shadow: 1px 2px 4px #585858;
 }
 
@@ -60,9 +64,13 @@ p {
     text-shadow: none;
 }
 
+.mainTitle {
+    font-size: 28px;
+}
 div input[type="text"] {
     font-size: 50px !important;
     text-indent: 7px;
+    margin-top: 5px;
 
 }
 
